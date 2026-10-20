@@ -955,9 +955,7 @@ export default function HomeScreen() {
 
           {yieldStatus === "error" && (
             <View style={styles.balanceErrorRow} testID="balance-error">
-              <Text style={styles.balanceErrorText}>
-                {yieldError} Balances may be out of date.
-              </Text>
+              <Text style={styles.balanceErrorText}>{yieldError}</Text>
               <TouchableOpacity
                 style={styles.retryChip}
                 onPress={handleYieldRetry}
